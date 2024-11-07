@@ -15,5 +15,10 @@ public class Main {
         int trueAnswer1 = 1 + (int) (Math.random() * 6);
         int trueAnswer2 = 1 + (int) (Math.random() * 6);
         int trueAnswer3 = 1 + (int) (Math.random() * 6);
+        while ((trueAnswer1 == trueAnswer2) || (trueAnswer2 == trueAnswer3) || (trueAnswer1 == trueAnswer3)) {
+            trueAnswer1 = 1 + (int) (Math.random() * 6);
+            trueAnswer2 = 1 + (int) (Math.random() * 6);
+            trueAnswer3 = 1 + (int) (Math.random() * 6);
+        }
     }
 }
